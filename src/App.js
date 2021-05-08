@@ -20,20 +20,21 @@ class App extends React.Component {
     fetch('http://localhost:3000/guides')
     .then(res => res.json())
     .then(guides => {
-      // debugger
+      debugger
       this.setState({ guides })
     })
   }
 
   render() {
     const { guides } = this.state;
+    // debugger
     return (
       <div className="App">
         <Navbar />
         <Switch>
           <Route exact path="/" render={ () => <Home />} />
           <Route exact path="/about" render={ () => <About />} />
-          <Route exact path="/explorers" render={ () => <Explorers />} />
+          <Route exact path="/explorers" render={ () => <Explorers guides={ guides }/>} />
           <Route exact path="/guides" render={ () => <GuidesContainer guides={ guides } />} />      
           <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides }/>} />
           {/* <Route exact path="/login" render={ () => <Auth />} />
