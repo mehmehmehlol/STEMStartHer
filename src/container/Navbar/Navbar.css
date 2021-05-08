@@ -1,0 +1,10 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    box-shadow: gray;
+}
+
+.navlink {
+    margin: 20px auto;
+}
