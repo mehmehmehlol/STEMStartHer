@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css';
 
 const Home = () => {
+  // Diana
   return (
     <div>
       <div className="HeroSection">
