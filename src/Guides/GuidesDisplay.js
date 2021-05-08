@@ -1,7 +1,7 @@
 import React from 'react'
 import GuideCard from './GuideCard'
 
-const GuidesDisplay = ({ guides }) => {
+const GuidesDisplay = ({ guides, displayGuideInfo }) => {
   return (
     <div>
       <h1>Our Guides</h1>
@@ -11,7 +11,9 @@ const GuidesDisplay = ({ guides }) => {
           return(
             <GuideCard 
               key={ guide.id }
-              guide= {guide }/>
+              guide= { guide }
+              handleClick={ displayGuideInfo }
+            />
           )
         })}
       </div>

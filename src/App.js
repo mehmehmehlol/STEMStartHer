@@ -10,6 +10,7 @@ import Explorers from './Explorers/Explorers';
 import Guides from './Guides/GuidesContainer';
 
 class App extends React.Component {
+
   render() {
     return (
       <div className="App">
