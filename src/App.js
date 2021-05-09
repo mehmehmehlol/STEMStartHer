@@ -12,6 +12,9 @@ import GuideDetails from './Guides/GuideDetails';
 import Welcome from './Landing/Welcome'
 // import Login from './Auth/Login'
 import Signup from './Auth/Signup'
+// import FormSelection from './Auth/FormSelection';
+// import Signup from './Auth/Signup';
+// import FormUserDetails from './Auth/FormUserDetails';
 
 const guidesURL = 'http://localhost:3000/guides'
 
@@ -31,32 +34,18 @@ class App extends React.Component {
       this.setState({ guides })
     })
   }
-    
-  // }
 
-  // componentDidMount() {
-  //   Promise.all([
-  //     fetch(profileURL), 
-  //     fetch(guidesURL)
-  //   ])
-  //   .then(res => Promise.all(res.map(r => r.json())))
-  //   .then(([user, guides]) => {
-  //     console.log(user)
-  //     console.log(guides)
-  //   })
-    // .then(([user, guides]) => this.setState({
-    //   user,
-    //   guides
-    // }))
   handleLogin = () => {
-    this.setState({ user: true})
+    this.setState({ user: true })
   }
 
   handleLogout = () => {
-    this.setState({ user: false})
+    this.setState({ user: false })
   }
 
-  
+  fetchSignupForm = () => {
+
+  }
 
   render() {
     const { guides, user } = this.state;
@@ -70,9 +59,11 @@ class App extends React.Component {
           <Route exact path="/explorers" render={ () => <Explorers guides={ guides }/>} />
           <Route exact path="/guides" render={ () => <GuidesContainer guides={ guides } />} />      
           <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides }/>} />
+          <Route exact path="/signup" render={ () => <Signup />} />
+          {/* <Route exact path="/signup-page-2" render={ () => <FormUserDetails />} /> */}
           {/* <Route exact path="/login" component={ this.renderForm } /> */}
           <Route exact path="/welcome" render={ () => <Welcome />}/>
-          <Route exact path="/signup" component={ this.renderForm } />
+
         </Switch>
         <Footer />
       </div>  
