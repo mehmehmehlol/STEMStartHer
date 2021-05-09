@@ -1,0 +1,12 @@
+
+.footer {
+    background-color: #B2DFDB;
+    padding: 50px 30px;
+    font-family: sans-serif; /* delete after body font is set to Manrope */
+
+}
+
+.footer .navlink {
+    display: inline-block;
+    line-height: initial;
+}
