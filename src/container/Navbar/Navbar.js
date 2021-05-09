@@ -6,10 +6,9 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div>
-        <Link className='navlink' to='/'>
-          {/* logo */}
-          ExplorHer
+      <div className="nav-left">
+        <Link className='navlink logo' to='/'>
+          Explor<span>Her</span>
         </Link>
       
       </div>
@@ -18,8 +17,13 @@ const Navbar = () => {
         <Link className="navlink" to="/about">About</Link>
         <Link className="navlink" to="/explorers">For Explorers</Link>
         <Link className="navlink" to="/guides">For Guides</Link>
-        <Link className="navlink" to="/login">Log In</Link>
-        <Link className="navlink" to="/signup">Sign Up</Link>
+        
+        <Link to="/login">
+          <div className="button btn-med blue">Log In</div>
+        </Link>
+        <Link to="/signup">
+          <div className="button btn-med">Sign Up</div>
+        </Link>
       </div>
     </div>
   )
