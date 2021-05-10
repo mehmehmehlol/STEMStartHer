@@ -16,7 +16,7 @@ import Signup from './Auth/Signup'
 // import Signup from './Auth/Signup';
 // import FormUserDetails from './Auth/FormUserDetails';
 
-const guidesURL = 'http://localhost:3000/guides'
+const guidesURL = 'https://explorher-backend.herokuapp.com/guides'
 
 class App extends React.Component {
   state = {
