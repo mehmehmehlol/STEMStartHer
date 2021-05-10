@@ -5,7 +5,7 @@ const GuidesDisplay = ({ guides }) => {
   // console.log(guides)
   return (
     <div>
-      <h1>Our Guides</h1>
+      <h1>Find a Guide!</h1>
       <GuideCard guides={ guides } />
     </div>
   )
