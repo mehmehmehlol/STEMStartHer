@@ -9,7 +9,7 @@ const Navbar = ({ user, handleLogin, handleLogout }) => {
       <div className="nav-left">
         <Link className='navlink logo' to='/'>
           <div className="logo-pic"></div>
-          <div className="logo-text"></div>
+          <div className="logo-text">ExplorHer</div>
         </Link>
       
       </div>
