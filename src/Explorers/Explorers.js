@@ -1,19 +1,17 @@
 import React from 'react'
 import './Explorers.css'
-import './images/Section-Bubbles.svg'
+import img from '../images/Section-Bubbles.svg'
 
 const Explorers = () => {
   // Alyssa
   return (
-    <div class="header">
+    <div className="header">
+      <div className="header-bar"></div>
       <h1>How does it work for explorers?</h1>
+      <img className="section-bubbles" src={img}/>
       {/* import guide recommendation */}
     </div>
   )
 }
-
-var myImage = new Image(1280, 1840);
-myImage.src = 'section-bubbles.svg';
-document.body.appendChild(myImage);
 
 export default Explorers
