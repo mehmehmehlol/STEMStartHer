@@ -1,6 +1,6 @@
 import React from 'react'
 import './Explorers.css'
-import img from '../images/Section-Bubbles.svg'
+import img from './images/Section-Bubbles.svg'
 import Carousel from 'react-elastic-carousel'
 import Item from './Item'
 import { Link } from 'react-router-dom'
