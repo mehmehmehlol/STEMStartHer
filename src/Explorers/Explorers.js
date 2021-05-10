@@ -29,7 +29,7 @@ const Explorers = ({ guides }) => {
       </div>
       <>
         <h5>Ready to become an Explorer?</h5>
-        <button>Sign Up</button>
+        <button><Link to="/signup">Sign Up</Link></button>
       </>
     </div>
   )
