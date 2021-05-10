@@ -53,3 +53,7 @@ body {
     width: 50px;
     margin: 15px 10px;
 }
+
+.button {
+    text-decoration: none;
+}

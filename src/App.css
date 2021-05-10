@@ -1,4 +1,12 @@
 /* ----------- Lara's Proposed additions to App.css ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: #ffffff;
+  color: #000000;
+  margin: none;
+}
 
 b {
   margin: none;   /*  This is important to fix ugly navbar issue - Lara */
