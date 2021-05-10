@@ -2,6 +2,7 @@ import React from 'react'
 import FormSelection from './FormSelection';
 import FormUserDetails from './FormUserDetails'
 import FormPersonalDetails from './FormPersonalDetails'
+import FormInterestDetails from './FormInterestDetails'
 
 class Signup extends React.Component {
   state = {
@@ -72,7 +73,15 @@ class Signup extends React.Component {
           />
         )
       case 4: 
-        return <h1>FormInterest</h1>    
+        return (
+          <FormInterestDetails 
+            prevStep={ this.prevStep }
+            handleSignup={ this.props.handleSignup }
+            // nextStep={ this.nextStep }
+            // handleChange={ this.handleChange }
+            // values={ values }
+          />
+        )
       default:
         // do nothing
     }

@@ -43,10 +43,6 @@ class App extends React.Component {
     this.setState({ user: false })
   }
 
-  fetchSignupForm = () => {
-
-  }
-
   render() {
     const { guides, user } = this.state;
     // debugger
@@ -59,7 +55,7 @@ class App extends React.Component {
           <Route exact path="/explorers" render={ () => <Explorers guides={ guides }/>} />
           <Route exact path="/guides" render={ () => <GuidesContainer guides={ guides } />} />      
           <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides }/>} />
-          <Route exact path="/signup" render={ () => <Signup />} />
+          <Route exact path="/signup" render={ () => <Signup user={ user } handleSignup={ this.handleLogin }/>} />
           {/* <Route exact path="/signup-page-2" render={ () => <FormUserDetails />} /> */}
           {/* <Route exact path="/login" component={ this.renderForm } /> */}
           <Route exact path="/welcome" render={ () => <Welcome />}/>
