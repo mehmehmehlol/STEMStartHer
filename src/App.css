@@ -1,11 +1,15 @@
-/* ----------- Lara's Proposed additions to App.css ----------- */
+.App {
+  text-align: center;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
 
 body {
-  font-family: 'Manrope', sans-serif;
-  background: #ffffff;
-  color: #000000;
-  margin: none;
+    font-family: 'Manrope', sans-serif;
+    background: #ffffff;
+    color: #000000;
+    margin: none;
 }
 
 b {
@@ -73,17 +77,5 @@ h3 {                              /*  Small grey Labels */
 /* -------  End lara's proposed additions ----------------------- */
 
 
-.App {
-  text-align: center;
-}
 
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
-
-body {
-    font-family: 'Manrope', sans-serif;
-    background: #ffffff;
-    color: #000000;
-    margin: none;
-  }
   
