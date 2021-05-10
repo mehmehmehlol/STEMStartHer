@@ -1,12 +1,28 @@
 import React, { Component } from 'react'
 import Select from 'react-select'
+import interestList from '../interest_data.json'
+import { Link } from 'react-router-dom'
 
-const interest = [ "Statistics", "Calculus", "Biology", "Chemistry", "Physics", "Environmental", "Geology", "Electrical", "Mechanical", "Civil", "Design", "Software", "Nanotech", "Data Science", "Machine Learning/AI", "VR", "Web Development", "UI/UX"]
+const searchList = interestList.map(
+  ({ subject }) => {
+    return {
+      value: subject,
+      label: subject
+    }
+  }
+)
 
 export default class FormInterestDetails extends Component {
-  continue = e => {
-    e.preventDefault();
-    this.props.nextStep();
+  state = {
+    selectedOption: null
+  }
+  // continue = e => {
+  //   e.preventDefault();
+  //   this.props.nextStep();
+  // }
+
+  handleSelect = selectedOption => {
+    this.setState({ selectedOption })
   }
 
   back = e => {
@@ -15,7 +31,8 @@ export default class FormInterestDetails extends Component {
   }
 
   render() {
-    const { values, handleChange } = this.props;
+    const { selectedOption } = this.state;
+    const { handleSignup } = this.props;
     return (
       <div>
           <div className="signup-header">
@@ -30,9 +47,16 @@ export default class FormInterestDetails extends Component {
 
           <div className="interest-select">
             <Select 
-
+              value={ selectedOption }
+              isMulti
+              name="subject"
+              options={ searchList }
+              onChange={ this.handleSelect }
+              placeholder="Search for your subject of interest"
+              className="basic-multi-select"
             />
           </div>
+          <button onClick={() => {handleSignup()}}><Link to="/welcome">Sign Up!</Link></button>
       </div>
     )
   }
