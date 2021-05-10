@@ -6,7 +6,43 @@
 
 }
 
+.footer-container {
+    display: flex;
+}
 .footer .navlink {
     display: inline-block;
     line-height: initial;
+}
+
+.footer-left {
+    width: 25%;
+}
+
+.footer-right {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-copyright {
+    display: block;
+}
+
+.social-icon {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    background-color: gray;
+    margin: 20px;
+}
+
+.footer-links {
+    text-align: right;
+    font-size: 18px;
+}
+
+.footer-bar {
+    height: 1px;
+    width: 80%;
+    border-bottom: 1px solid #00796B;
 }

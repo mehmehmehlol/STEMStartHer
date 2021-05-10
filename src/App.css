@@ -1,12 +1,14 @@
 /* ----------- Lara's Proposed additions to App.css ----------- */
 
 b {
-  font-family: 'Manrope', sans-serif;
   margin: none;   /*  This is important to fix ugly navbar issue - Lara */
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
 }
 
 p {
   font-family: 'Martel', serif;
+  font-size: 16px;
 }
 
 h1 {
