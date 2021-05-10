@@ -3,14 +3,20 @@ import './Explorers.css'
 import Carousel from 'react-elastic-carousel'
 import Item from './Item'
 import { Link } from 'react-router-dom'
+import img0 from '../images/Section-Bubbles.svg'
+import img1 from '../images/Companies.svg'
+import img2 from '../images/Testimonial.svg'
 
 const Explorers = ({ guides }) => {
   return (
     <div>
-      <h1>How does it work for explorers?</h1>
-      <h3>1 Professionals have career path experience that students want.</h3>
+      <div class="header">
+      <h1 class="heading">How does it work for explorers?</h1>
+      </div>
+      <img className="section-bubble" src={img0}/>
+      {/* import guide recommendation */}
       <>
-        <h4>Check out our Guides</h4>
+        <h4 class="heading">Check out our Guides!</h4>
         <Carousel itemsToShow={4} itemsToScroll={2}>
           { guides.map(guide => (
             <Item key={ guide.id }>
@@ -25,11 +31,15 @@ const Explorers = ({ guides }) => {
           ))}
         </Carousel>
       </>
-      <div className="testimonial">
-      </div>
       <>
+      <img className="companies" src={img1}/>
+      </>
+      <img className="testimonial" src={img2}/>
+      <>
+      <div className="sign-up">
         <h5>Ready to become an Explorer?</h5>
-        <button><Link to="/signup">Sign Up</Link></button>
+        <button className="sign-up-btn"><Link to="/signup">Sign Up</Link></button>
+        </div>
       </>
     </div>
   )
