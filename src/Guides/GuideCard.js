@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const GuideCard = ({ guide, handleClick }) => {
-  const { first_name, last_name, job_title, company, profile_pic} = guide
-
+const GuideCard = ({ guides }) => {
   return (
-    <div className="guide-card" key={ guide.id }>
-      <div>
-        <img className="guide-image" src={profile_pic} alt={first_name} />
-        <h2 onClick={() => handleClick(guide)} style={{cursor: 'pointer'}}>Name: {first_name} {last_name}</h2>
-        <h4>Job Title: {job_title}</h4>
-        <h4>Company: {company}</h4>
-      </div>
-    </div>
+    <>
+      { guides.map(guide => (
+        <div key={ guide.id }>
+          <img className="guide-image" src={guide.profile_pic} alt={guide.first_name} />
+          <h4>Name: <Link to={`/guides/${guide.first_name}`}>{guide.first_name} {guide.last_name}</Link></h4>
+          <h4>Job Title: {guide.job_title}</h4>
+          <h4>Company: {guide.company}</h4>
+        </div>
+      ))}
+    </>
   )
 }
 

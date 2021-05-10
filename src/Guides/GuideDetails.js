@@ -1,30 +1,32 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-const GuideDetails = ({ selected }) => {
-  let { first_name } = useParams();
-  const { last_name, email, linkedin, geoLocation, job_title, company, bio, profile_pic} = selected
-  const fields = selected.fields_of_expertise
-  const years = selected.years_of_experience
+const GuideDetails = ({ guides }) => {
+  const { first_name } = useParams();
 
   return (
-    <div>
-      <div className="guide-detail-container" key={ selected.id }>
-        <div>
-          <img className="guide-image" src={profile_pic} alt={first_name} />
-          <h2>Name: {selected.first_name} {last_name}</h2>
-          <h4>Email: {email}</h4>
-          {/* add a linkedin logo here */}
-          <h4>LinkedIn: {linkedin}</h4> 
-          <h4>Location: {geoLocation}</h4>
-          <h4>Job Title: {job_title}</h4>
-          <h4>Company: {company}</h4>
-          <h4>Fields of Expertise: {fields.map(field => <h4>{field}</h4>)}</h4>
-          <h4>Years of Experience: {years.map(year => <h4>{year}</h4>)}</h4>
-          <p>{bio}</p>
+      <div className="full-detail">
+        <div className="guide-container">
+          {
+            guides
+              .filter((guide) => guide.first_name === first_name)
+              .map((guide) => (
+                <div className="full-card" key={ guide.id }>
+                  <img className="guide-image" src={guide.profile_pic} alt={guide.first_name} />
+                  <h2>Name: {guide.first_name} {guide.last_name}</h2>
+                  <h4>Email: {guide.email}</h4>
+                  {/* Front-end team: add a linkedin logo here */}
+                  <h4>LinkedIn: {guide.linkedin}</h4> 
+                  <h4>Location: {guide.geoLocation}</h4>
+                  <h4>Job Title: {guide.job_title}</h4>
+                  <h4>Company: {guide.company}</h4>
+                  <h4>Fields of Expertise: {guide.fields_of_expertise.map(field => <h4>{field}</h4>)}</h4>
+                  <h4>Years of Experience: {guide.years_of_experience.map(year => <h4>{year}</h4>)}</h4>
+                  <p>{guide.bio}</p>
+                </div>
+              ))}
         </div>
       </div>
-    </div>
   )
 }
 
