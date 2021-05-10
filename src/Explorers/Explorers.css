@@ -1,6 +1,73 @@
+/* How does it work for explorers? */
+
 .header{
-    padding: 60px;
+  padding: 20px;
+  background: #B2DFDB;
+  align-items: center;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+  
+  /* Images on the Page */
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Title of each section */
+  .heading{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 55px;
     text-align: center;
-    background: #B2DFDB;
-    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Sign-Up Btn */
+
+.sign-up-btn {
+  padding: 15px 90px;
+  background: #00796B;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #FFFFFF;    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign-up-btn a {
+  text-decoration: none;
+}
+
+.sign-up-btn a:link {
+  color: #FFFFFF;
+}
+
+/* visited link */
+.sign-up-btn a:visited {
+  color: #FFFFFF;
+}
+/* mouse over link */
+.sign-up-btn a:hover {
+  color: #FFFFFF;
+}
+/* selected link */
+.sign-up-btn a:active {
+  color:#FFFFFF;
+}
+
+/* Sign Up Section */
+
+.sign-up h5{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 24px;
+  text-align: center;
 }
