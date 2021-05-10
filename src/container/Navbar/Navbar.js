@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 
 const Navbar = ({ user, handleLogin, handleLogout }) => {
   return (
     <div className="navbar">
-      <div>
-        <Link className='navlink' to='/'>
-          {/* logo */}
-          ExplorHer
+      <div className="nav-left">
+        <Link className='navlink logo' to='/'>
+          <div className="logo-pic"></div>
+          <div className="logo-text"></div>
         </Link>
       
       </div>
@@ -24,12 +25,12 @@ const Navbar = ({ user, handleLogin, handleLogout }) => {
           <Link className="navlink" to="/about">About</Link>
           <Link className="navlink" to="/explorers">For Explorers</Link>
           {/* <Link className="navlink" to="/guides">For Guides</Link> */}
-          <Link className="navlink" to="/welcome" onClick={() => {handleLogin()}}>Log In</Link>
-          <Link className="navlink" to="/signup">Sign Up</Link>
+          <Link className="button btn-med blue" to="/welcome" onClick={() => {handleLogin()}}> 
+              Log In
+          </Link>
+          <Link className="button btn-med" to="/signup">Sign Up</Link>
         </div>
       }
-
-      
     </div>
   )
 }

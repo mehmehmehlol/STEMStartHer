@@ -1,0 +1,55 @@
+body {
+    margin: none;      
+}
+
+.navbar {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
+    background-color: white;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    font-family: sans-serif; /* delete after body font is set to Manrope */
+}
+
+
+.navlink {
+    padding: 20px;
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    padding: 0px;
+}
+
+.logo-text {
+    display: inline-block;
+    background-image: url(/src/Media/logo-text.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    align-self: center;
+    height: 50px;
+    width: 120px;
+    margin: 15px 10px;
+}
+
+.logo-pic {
+    display: inline-block;
+    background-image: url(/src/Media/logo-image-temporary.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    align-self: center;
+    height: 50px;
+    width: 50px;
+    margin: 15px 10px;
+}
