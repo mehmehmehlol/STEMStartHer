@@ -3,6 +3,8 @@ import FormSelection from './FormSelection';
 import FormUserDetails from './FormUserDetails'
 import FormPersonalDetails from './FormPersonalDetails'
 import FormInterestDetails from './FormInterestDetails'
+// Added a new file -Alyssa
+import './Signup.css'
 
 class Signup extends React.Component {
   state = {
