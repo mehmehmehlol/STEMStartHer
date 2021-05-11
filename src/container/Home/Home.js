@@ -164,8 +164,7 @@ const Home = () => {
           </div> */}
           {/* end mentors row 2 */}
 
-          <div className="text-center m-4 p-4"><button className="btn btn-primary btn-lg btn-green">Search more Guides</button></div>
-
+          <div className="text-center m-4 p-4"><Button variant="primary" className="btn-md btn-green">Search more Guides</Button></div>
         </Container>
       </Container>
 
