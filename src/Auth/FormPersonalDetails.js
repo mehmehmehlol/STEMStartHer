@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+// Added new file -Alyssa
+import progressbar3 from '../images/progress-bar-step-3.svg'
 
 export default class FormPersonalDetails extends Component {
   continue = e => {
@@ -20,7 +22,7 @@ export default class FormPersonalDetails extends Component {
           </div>
 
           <div>
-            {/* I assume the circle thing is gonna go here */}
+          <img className="progressbar3" alt="Step 3" src={progressbar3}/>
           </div>
 
           <h5>Create a public profile, this is what guides see.</h5>

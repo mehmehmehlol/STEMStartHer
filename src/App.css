@@ -1,11 +1,12 @@
-.App {
-  text-align: center;
-}
 
-/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
 
 * {
   font-family: 'Manrope', sans-serif;
+}
+
+.App {
+  text-align: center;
 }
 
 body {
@@ -116,5 +117,4 @@ a {
   background: #FFFBDC;
   min-height: 170px;
 }
-
   
