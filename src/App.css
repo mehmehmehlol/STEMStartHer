@@ -73,16 +73,26 @@ h3 {                              /*  Small grey Labels */
   color: black;
 }
 
-/* Talk to our guides */
-.guide-cards .card-img-top {
+/* .guide-cards {
+    padding-bottom: 10px;
+ } */
+
+ .guide-cards .card-img-top {
   object-fit: cover;
 }
 
 .guide-cards .card-body {
   position: relative;
   margin-top: -58px;
+  margin-bottom: -50px;
+  /* padding: 100px; */
   background: #FFFBDC;
   min-height: 170px;
+  /* display: inline-block; */
+}
+
+.guide-recommendation {
+  margin-bottom: 58px;
 }
 
 

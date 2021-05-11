@@ -51,14 +51,13 @@ h2 {
     margin: 10px;
 }
 
-/* Talk to our guides */
-.guide-cards .card-img-top {
-    object-fit: cover;
-}
+/* .guides-recommendation {
+    margin-bottom: auto 0;
+} */
 
-.guide-cards .card-body {
-    position: relative;
-    margin-top: -58px;
-    background: #FFFBDC;
-    min-height: 170px;
-}
+/* .explorer-guide {
+    /* margin-top: 10px; */
+
+
+
+

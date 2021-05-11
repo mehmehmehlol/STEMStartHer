@@ -1,7 +1,7 @@
 import React from 'react'
 import SubjectFilter from '../Filter/SubjectFilter'
 import GuidesDisplay from './GuideDisplay'
-import RandomGuidesGenerator from './RandomGuidesGenerator'
+import RandomGuidesGenerator from '../RandomGuidesGenerator'
 
 const GuidesContainer = ({ guides }) => {
   return (

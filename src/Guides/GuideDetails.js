@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import RandomGuidesGenerator from '../Guides/RandomGuidesGenerator'
+import RandomGuidesGenerator from '../RandomGuidesGenerator'
 
 const GuideDetails = ({ guides }) => {
   const { first_name } = useParams();
@@ -28,8 +28,9 @@ const GuideDetails = ({ guides }) => {
               ))}
         </div>
 
-        <div className="recommended-guides">
+        <div className="guide-recommendation">
           <h1>Recommended Guides</h1>
+          {/* please uncomment the code below if you are working on the style and comment after styling*/}
           <RandomGuidesGenerator guides={ guides } />
         </div>
       </div>

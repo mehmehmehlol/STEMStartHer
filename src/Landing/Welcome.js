@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import RandomGuidesGenerator from '../Guides/RandomGuidesGenerator'
+import RandomGuidesGenerator from '../RandomGuidesGenerator'
 
 const Welcome = ({ guides }) => {
 
@@ -15,7 +15,7 @@ const Welcome = ({ guides }) => {
       </div>
 
       {/* randomly generate guides */}
-      <div className="guides-display-container">
+      <div className="guide-recommendation">
         <h1>Check out our Guides!</h1>
         <RandomGuidesGenerator guides={ guides } />
       </div>
