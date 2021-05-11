@@ -1,7 +1,8 @@
 import React from 'react'
-import SubjectFilter from '../Filter/SubjectFilter'
+// import SubjectFilter from '../Filter/SubjectFilter'
 import GuidesDisplay from './GuideDisplay'
 import RandomGuidesGenerator from '../RandomGuidesGenerator'
+import Filter from '../Filter/Filter'
 
 const GuidesContainer = ({ guides }) => {
   return (
@@ -12,7 +13,7 @@ const GuidesContainer = ({ guides }) => {
       </div>
       
       <div className="search-guides">
-        {/* <SubjectFilter /> */}
+        <Filter />
         <GuidesDisplay guides={ guides } />
       </div>
     </div>

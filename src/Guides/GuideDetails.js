@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import RandomGuidesGenerator from '../RandomGuidesGenerator'
 
-const GuideDetails = ({ guides }) => {
+const GuideDetails = ({ guides, user }) => {
   const { first_name } = useParams();
 
   return (
@@ -24,15 +24,28 @@ const GuideDetails = ({ guides }) => {
                   <h4>Fields of Expertise: {guide.fields_of_expertise.map(field => <h4>{field}</h4>)}</h4>
                   <h4>Years of Experience: {guide.years_of_experience.map(year => <h4>{year}</h4>)}</h4>
                   <p>{guide.bio}</p>
+                  {
+                    user 
+                    ?
+                    <div>
+                      <button className="button ">Schedule a chat with {guide.first_name}</button>
+                    </div>
+                    :
+                    <>
+                    </>
+                  }
+                  
                 </div>
               ))}
         </div>
 
+        
         <div className="guide-recommendation">
           <h1>Recommended Guides</h1>
-          {/* please uncomment the code below if you are working on the style and comment after styling*/}
-          <RandomGuidesGenerator guides={ guides } />
+            <RandomGuidesGenerator guides={ guides } />
         </div>
+
+        
       </div>
   )
 }
