@@ -1,0 +1,73 @@
+[ 
+  {
+    "category": "Math",
+    "subject": "Statistics"
+  }, 
+  {
+    "category": "Math",
+    "subject": "Calculus"
+  },
+  {
+    "category": "Science",
+    "subject": "Biology"
+  },
+  {
+    "category": "Science",
+    "subject": "Chemistry"
+  },
+  {
+    "category": "Science",
+    "subject": "Physics"
+  },
+  {
+    "category": "Science",
+    "subject": "Environmental"
+  },
+  {
+    "category": "Science",
+    "subject": "Geology"
+  },
+  {
+    "category": "Engineering",
+    "subject": "Electrical"
+  },
+  {
+    "category": "Engineering",
+    "subject": "Mechanical"
+  },
+  {
+    "category": "Engineering",
+    "subject": "Civil"
+  },
+  {
+    "category": "Engineering",
+    "subject": "Design"
+  },
+  {
+    "category": "Engineering",
+    "subject": "Software"
+  },
+  {
+    "category": "Technology",
+    "subject": "Nanotech"
+  },
+  {
+    "category": "Technology",
+    "subject": "Data Science"
+  },
+  {
+    "category": "Technology",
+    "subject": "Machine Learning/AI"
+  },
+  {
+    "category": "Technology",
+    "subject": "VR"
+  },
+  {
+    "category": "Technology",
+    "subject": "Web Development"
+  },
+  {
+    "category": "Technology",
+    "subject": "UI/UX"
+  } ]
