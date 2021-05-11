@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #ffffff;
+    color: #000000;
+    margin: none;
+  }
+
 /* ----------- Lara's Proposed additions to App.css ----------- */
 
 b {
@@ -70,12 +79,5 @@ h3 {                              /*  Small grey Labels */
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
 
-body {
-    font-family: 'Manrope', sans-serif;
-    background: #ffffff;
-    color: #000000;
-    margin: none;
-  }
   

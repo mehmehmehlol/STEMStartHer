@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+// Added new files -Alyssa
+import '../styles/FormUserDetails.css'
+import progressbar2 from '../images/progress-bar-step-2.svg'
+
 
 export default class FormUserDetails extends Component {
   continue = e => {
@@ -16,11 +20,11 @@ export default class FormUserDetails extends Component {
     return (
       <div>
           <div className="signup-header">
-            <h1>Next Step!</h1>
+            <h1 className="heading">Next Step!</h1>
           </div>
 
           <div>
-            {/* I assume the circle thing is gonna go here */}
+          <img className="progressbar2" alt="Step 2" src={progressbar2}/>
           </div>
 
           <h5>Let's continue with the basics!</h5>
