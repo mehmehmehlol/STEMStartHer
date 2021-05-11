@@ -34,7 +34,7 @@ h2 {
 .home-banner-right img {
     height: 420px;
     object-fit: contain;
-    padding: 0;
+    padding-top: 20px;
     width: 100%;
 }
 
