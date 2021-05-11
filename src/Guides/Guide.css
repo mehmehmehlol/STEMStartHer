@@ -1,0 +1,93 @@
+
+.recommended-guides > .wrapper {
+    height: 180px;
+    padding: 4rem;
+    background: #00796B;
+}
+
+.recommended-guides h1 {
+    color: #fff;
+}
+
+.filter-wrapper {
+    min-height: 200px;
+    padding: 2rem;
+    background: #DEDEDE;
+}
+
+.filter-wrapper div {
+    display: inline-flex;
+    margin: 10px 20px;
+}
+
+.filter-wrapper div select {
+    min-width: 200px;
+    margin-left: 10px;
+}
+
+.display-guides {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.display-guides > div > div > div {
+    border-radius: 10px;
+    min-height: 345px;
+    margin-bottom: 30px;
+}
+
+.display-guides div {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    min-height: 345px;
+    
+}
+
+.display-guides-wrapper {
+    width: 62%;;
+}
+
+.display-guides-wrapper h1 {
+    display: none;
+}
+
+.guide-profile-pic {
+    padding-left: 0!important;
+}
+
+.guide-profile-pic .guide-image {
+    object-fit: cover;
+    height: 345px;
+    border-radius: 10px 0 0 10px;
+}
+
+.guide-info {
+    width: 500px;
+    padding: 30px;
+    background: #dedede;
+}
+
+.guide-years-fields-experience {
+    display: inline-flex!important;
+    width: 362px;
+    padding: 30px;
+    background: #b2dfdb;
+    border-radius: 0 10px 10px 0;
+}
+
+.guide-years-fields-experience h4 {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.guide-years-fields-experience > h4:first-child, .guide-years-fields-experience > h4:nth-child(2) {
+    font-weight: 600;
+}
+
+.guide-years-fields-experience > h4:nth-child(2) {
+    margin-left: 50px;
+    text-align: center;
+}
+
+
