@@ -9,7 +9,7 @@ const Navbar = ({ user, handleLogin, handleLogout }) => {
       <div className="nav-left">
         <Link className='navlink logo' to='/home'>
           <div className="logo-pic"></div>
-          <div className="logo-text">ExplorHer</div>
+          <div className="logo-text"></div>
         </Link>
       
       </div>

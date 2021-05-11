@@ -22,25 +22,35 @@ h2 {
 /* Hero */
 
 .home-banner {
-    background: url("https://i.imgur.com/Mwof4Vw.jpg") repeat;
+    background: url("https://i.imgur.com/Mwof4Vw.jpg") repeat-x;
+    padding: 0;
+    margin: 0;
 }
 
-.home-banner .col:first-child {
+.home-banner-left {
     padding: 4.25rem;
 }
 
-.home-banner .col:nth-child(2) img {
+.home-banner-right img {
     height: 420px;
     object-fit: contain;
-    width: 100%;
     padding: 0;
+    width: 100%;
 }
 
 /* Search guide */
 
-.home-search h2 {
-    width: 60%;
+.home-search-wrapper {
+    background: #DEDEDE;
+}
+
+.home-search {
+    width: 70%;
     margin: 0 auto;
+}
+
+.home-search btn {
+    width: 130px;
 }
 
 .fullName input {
@@ -51,13 +61,28 @@ h2 {
     margin: 10px;
 }
 
-/* .guides-recommendation {
-    margin-bottom: auto 0;
-} */
+.fullName .btn {
+    position: relative;
+    top: -3px;
+}
 
-/* .explorer-guide {
-    /* margin-top: 10px; */
+/* Talk to our guides */
+.scroll-guides .btn {
+    width: 3rem;
+    height: 3rem;
+}
 
+.scroll-guides .caret-bigger {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 0.4;
+}
 
+.guide-cards .card {
+    margin-bottom: 20px;
+}
 
+.guide-cards .card-img-top {
+    object-fit: cover;
+}
 
