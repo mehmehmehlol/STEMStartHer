@@ -73,7 +73,17 @@ h3 {                              /*  Small grey Labels */
   color: black;
 }
 
-/* -------  End lara's proposed additions ----------------------- */
+/* Talk to our guides */
+.guide-cards .card-img-top {
+  object-fit: cover;
+}
+
+.guide-cards .card-body {
+  position: relative;
+  margin-top: -58px;
+  background: #FFFBDC;
+  min-height: 170px;
+}
 
 
 

@@ -1,14 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
+import RandomGuidesGenerator from '../Guides/RandomGuidesGenerator'
 
 const Welcome = ({ guides }) => {
-
-  const [randomNumber, setRandomNumber] = useState(1)
-
-  const generateRandomNumber = () => {
-    const randomNumber = Math.floor(Math.random() * guides.length)
-    setRandomNumber(randomNumber)
-  }
 
   return (
     <div className="welcome">
@@ -20,18 +14,13 @@ const Welcome = ({ guides }) => {
         <button><Link to="/guides">Let's Proceed!</Link></button>
       </div>
 
+      {/* randomly generate guides */}
       <div className="guides-display-container">
-          {/* randomly generate guides */}
-        {/* <div className="guides-display">
-          <div key={ guides[randomNumber].id }>
-            <img className="guide-image" src={guides[randomNumber].profile_pic} alt={guides[randomNumber].first_name} />
-            <h4>Name: <Link to={`/guides/${guides[randomNumber].first_name}`}>{guides[randomNumber].first_name} {guides[randomNumber].last_name}</Link></h4>
-            <h4>Job Title: {guides[randomNumber].job_title}</h4>
-            <h4>Company: {guides[randomNumber].company}</h4>
-          </div>
-        </div> */}
-        
+        <h1>Check out our Guides!</h1>
+        <RandomGuidesGenerator guides={ guides } />
       </div>
+
+      
     </div>
   )
 }

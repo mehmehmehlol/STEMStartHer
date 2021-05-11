@@ -1,8 +1,9 @@
 import React from 'react'
+import RandomGuidesGenerator from '../../Guides/RandomGuidesGenerator';
 import './Home.css';
+import { Link } from 'react-router-dom'
 
-const Home = () => {
-  // Diana
+const Home = ({ guides }) => {
   return (
     <div>
       
@@ -14,7 +15,7 @@ const Home = () => {
               <h1 className="display-4">Choosing a career is a big deal</h1>
               <p className="lead">We help you make confident career decisions by faciliatiing direct conversations with working professionals in their field of interest.</p>
               <p className="lead">
-                <a className="btn btn-primary btn-lg btn-blue" href="#" role="button">How it works &#8250;</a>
+                <button className="btn btn-primary btn-lg btn-blue"><Link to="/explorers">How it works &#8250;</Link></button>
               </p>
             </div>
             <div className="col md-6">
@@ -41,61 +42,9 @@ const Home = () => {
       </div>
 
       {/* import guides here */}
-      <div className="p-4 m-4">
+      <div className="p-4 m-4 guides-recommendation">
         <h2 className="p-4">Talk with our Guides!</h2>
-        <div className="container-fluid guide-cards">
-          {/* mentors row 1 */}
-          <div className="row mb-4 p-4">
-            <div className="col md-3">
-              <div className="card">
-                <a href="#"><img className="card-img-top" src="https://i.imgur.com/wFwCEKP.jpeg" alt="Card image cap" /></a>
-                <div class="card-body">
-                  <h5 class="card-title">Regina Villanueva</h5>
-                  <p class="card-text">Microelectronics Research Engineer</p>
-                  <p class="card-text"><small>at P.B. Matheson Micro</small></p>
-                </div>
-              </div>
-            </div>
-            <div className="col md-3">
-              <div className="card">
-                <a href="#"><img className="card-img-top" src="https://i.imgur.com/5t1iB2x.jpg" alt="Card image cap" /></a>
-                <div class="card-body">
-                  <h5 class="card-title">Marie Bellanti</h5>
-                  <p class="card-text">Pharmacy Technician<br/></p>
-                  <p class="card-text"><small>at Kaiser Permanente</small></p>
-                </div>
-              </div>
-            </div>
-            <div className="col md-3">
-              <div className="card">
-                <a href="#"><img className="card-img-top" src="https://i.imgur.com/nMa3bp0.jpg" alt="Card image cap" /></a>
-                <div class="card-body">
-                  <h5 class="card-title">Rene Johnson</h5>
-                  <p class="card-text">Federal Population Statistician</p>
-                  <p class="card-text"><small>at United States Census Bureau</small></p>
-                </div>
-              </div>
-            </div>
-            <div className="col md-3">
-              <div className="card">
-                <a href="#"><img className="card-img-top" src="https://i.imgur.com/zhOUTn1.jpg" alt="Card image cap" /></a>
-                <div class="card-body">
-                  <h5 class="card-title">Brittney Mezynski</h5>
-                  <p class="card-text">Synthetic Textile Research Chemist</p>
-                  <p class="card-text"><small>at Nike</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div className="guides-recommendation">
-        {/* import guides here */}
-
-        {/* make it toggable */}
+        <RandomGuidesGenerator guides={ guides }/>
       </div>
 
       {/* As an Explorer and As a Guide */}

@@ -1,12 +1,13 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import RandomGuidesGenerator from '../Guides/RandomGuidesGenerator'
 
 const GuideDetails = ({ guides }) => {
   const { first_name } = useParams();
 
   return (
-      <div className="full-detail">
-        <div className="guide-container">
+      <div className="guide-detail">
+        <div className="guide-info">
           {
             guides
               .filter((guide) => guide.first_name === first_name)
@@ -25,6 +26,11 @@ const GuideDetails = ({ guides }) => {
                   <p>{guide.bio}</p>
                 </div>
               ))}
+        </div>
+
+        <div className="recommended-guides">
+          <h1>Recommended Guides</h1>
+          <RandomGuidesGenerator guides={ guides } />
         </div>
       </div>
   )
