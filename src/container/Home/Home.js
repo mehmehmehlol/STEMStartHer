@@ -3,7 +3,7 @@ import RandomGuidesGenerator from '../../RandomGuidesGenerator';
 import './Home.css';
 import { Link } from 'react-router-dom'
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import { Container,Row,Col,Form,Card } from 'react-bootstrap';
+import { Container,Row,Col,Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 
 const Home = ({ guides }) => {
