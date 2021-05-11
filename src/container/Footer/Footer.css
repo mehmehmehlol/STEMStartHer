@@ -1,7 +1,6 @@
-
 .footer {
     background-color: #B2DFDB;
-    padding: 50px 30px;
+    padding: 8px 25px;
     /* font-family: sans-serif; delete after body font is set to Manrope */
 
 }
@@ -9,9 +8,10 @@
 .footer-container {
     display: flex;
 }
-.footer .navlink {
+.footer-navlink {
     display: inline-block;
     line-height: initial;
+    padding: 10px;
 }
 
 .footer-left {
@@ -24,25 +24,43 @@
     flex-direction: column;
 }
 
+.logo {
+    display: flex;
+    padding: 0px;
+}
+
+.logo-text {
+    display: inline-block;
+    background-image: url(/src/images/logo-text.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    align-self: center;
+    height: 50px;
+    width: 120px;
+    margin: 15px 10px;
+}
+
 .footer-copyright {
     display: block;
 }
 
 .social-icon {
     display: inline-block;
-    height: 64px;
-    width: 64px;
-    background-color: gray;
-    margin: 20px;
+    height: 40px;
+    width: 40px;
+    /* background-color: gray; */
+    margin: 15px;
 }
 
 .footer-links {
     text-align: right;
-    font-size: 18px;
+    font-size: 20px;
+    margin: 5px;
 }
 
 .footer-bar {
     height: 1px;
-    width: 80%;
+    width: 90%;
     border-bottom: 1px solid #00796B;
 }

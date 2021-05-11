@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import RandomGuidesGenerator from '../RandomGuidesGenerator'
+import './Welcome.css'
+
 
 const Welcome = ({ guides }) => {
 
@@ -11,7 +13,7 @@ const Welcome = ({ guides }) => {
         <h5>Welcome, new explorer!</h5>
         <p>This is the start of your career. To begin, check out our Guides at San Francisco, </p>
         <p>When you schedule a meeting, a notification will appear here.</p>
-        <button><Link to="/guides">Let's Proceed!</Link></button>
+        <Link to="/guides" style={{ textDecoration: "none" }}><button className="button btn-lg appointment-button">Let's Proceed!</button></Link>
       </div>
 
       {/* randomly generate guides */}
