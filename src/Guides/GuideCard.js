@@ -6,10 +6,22 @@ const GuideCard = ({ guides }) => {
     <>
       { guides.map(guide => (
         <div key={ guide.id }>
-          <img className="guide-image" src={guide.profile_pic} alt={guide.first_name} />
-          <h4>Name: <Link to={`/guides/${guide.first_name}`}>{guide.first_name} {guide.last_name}</Link></h4>
-          <h4>Job Title: {guide.job_title}</h4>
-          <h4>Company: {guide.company}</h4>
+          <div className="guide-profile-pic">
+            <img className="guide-image" src={guide.profile_pic} alt={guide.first_name} />
+          </div>
+
+          <div className="guide-info">
+            <h4><Link to={`/guides/${guide.first_name}`}>{guide.first_name} {guide.last_name}</Link>,</h4>
+            <h4>{guide.job_title}</h4>
+            <h4>At {guide.company} in { guide.geoLocation }</h4>
+            <br />
+            { guide.bio }
+          </div>
+
+          <div className="guide-years-fields-experience">
+            <h4>Experience: {guide.fields_of_expertise.map(field => <h4>{field}</h4>)}</h4>
+            <h4>Years: {guide.years_of_experience.map(year => <h4>{year}</h4>)}</h4>
+          </div>
         </div>
       ))}
     </>

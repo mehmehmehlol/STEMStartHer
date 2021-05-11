@@ -14,7 +14,7 @@ const Explorers = ({ guides }) => {
       <h1 class="heading">How does it work for explorers?</h1>
       </div>
       <img className="section-bubble" src={img0}/>
-      {/* import guide recommendation */}
+        
       <>
         <h4 class="heading">Check out our Guides!</h4>
         <Carousel itemsToShow={4} itemsToScroll={2}>

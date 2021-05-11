@@ -1,0 +1,163 @@
+
+.recommended-guides > .wrapper {
+    height: 180px;
+    padding: 4rem;
+    background: #00796B;
+}
+
+.recommended-guides h1 {
+    color: #fff;
+}
+
+.filter-wrapper {
+    min-height: 200px;
+    padding: 2rem;
+    background: #DEDEDE;
+}
+
+.filter-wrapper div {
+    display: inline-flex;
+    margin: 10px 20px;
+}
+
+.filter-wrapper div select {
+    min-width: 200px;
+    margin-left: 10px;
+}
+
+.display-guides {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.display-guides > div > div > div {
+    border-radius: 10px;
+    min-height: 345px;
+    margin-bottom: 30px;
+}
+
+.display-guides div {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    min-height: 345px;
+    
+}
+
+.display-guides-wrapper {
+    width: 62%;;
+}
+
+.display-guides-wrapper h1 {
+    display: none;
+}
+
+.guide-profile-pic {
+    padding-left: 0!important;
+}
+
+.guide-profile-pic .guide-image {
+    object-fit: cover;
+    height: 345px;
+    border-radius: 10px 0 0 10px;
+}
+
+.recommended-guides .guide-info {
+    width: 500px;
+    padding: 30px;
+    background: #dedede;
+}
+
+.guide-years-fields-experience {
+    display: inline-flex!important;
+    width: 362px;
+    padding: 30px;
+    background: #b2dfdb;
+    border-radius: 0 10px 10px 0;
+}
+
+.guide-years-fields-experience h4 {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.guide-years-fields-experience > h4:first-child, .guide-years-fields-experience > h4:nth-child(2) {
+    font-weight: 600;
+}
+
+.guide-years-fields-experience > h4:nth-child(2) {
+    margin-left: 50px;
+    text-align: center;
+}
+
+/* Guide Profile */
+
+.guide-profile-cover-bg {
+    height: 200px;
+    background: url('https://i.imgur.com/Mwof4Vw.jpg') repeat-x;
+    border-bottom: 8px solid #00796B;
+}
+
+.guide-detail .guide-info {
+    background: #fff!important;
+    padding: 4rem;
+}
+
+.guide-detail .details-right {
+    padding: 0 50px;
+}
+
+.guide-detail .details-left {
+    position: relative;
+    top: -8rem;
+}
+
+.details-left h4 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.field-of-expertise > h4 > h4:first-child, .years-of-experience > h4 > h4:first-child{
+    padding-top: 20px;
+}
+
+.field-of-expertise {
+    background: #DEDEDE;
+    border-radius: 10px 0 0 10px;
+    
+}
+
+.years-of-experience {
+    background: #DEDEDE;
+    border-radius: 0 10px 10px 0;
+}
+
+.field-of-expertise > h4, .years-of-experience > h4 {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.years-of-experience h4 {
+    text-align: center;
+}
+
+.guide-detail p {
+    font-size: 20px;
+}
+
+.full-card .guide-image {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.social-media-wrapper {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.social-media-icons {
+    width: 64px;
+    padding: 5px;
+}

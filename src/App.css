@@ -1,24 +1,31 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
 
+* {
+  font-family: 'Manrope', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
 body {
-    font-family: 'Manrope', sans-serif;
-    background: #ffffff;
-    color: #000000;
-    margin: none;
-  }
+  /* font-family: 'Manrope', sans-serif; */
+  background: #ffffff;
+  color: #000000;
+  margin: none;
+}
 
-/* ----------- Lara's Proposed additions to App.css ----------- */
-
-b {
-  margin: none;   /*  This is important to fix ugly navbar issue - Lara */
+/* b {
+  margin: none;   
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
-}
+} */
 
-p {
+/* p {
   font-family: 'Martel', serif;
   font-size: 16px;
-}
+} */
 
 h1 {
   font-size: 34px;
@@ -39,6 +46,11 @@ h3 {                              /*  Small grey Labels */
   color: #626262;
 }
 
+a {
+  color: #000;
+  font-weight: 600; 
+}
+
 .button {
   display: inline-block;
   margin: 10px 10px;
@@ -46,6 +58,15 @@ h3 {                              /*  Small grey Labels */
   background-color: #00796B;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
+}
+
+.button:hover,
+.blue:hover {
+  background-color: #FFFBDC
+}
+
+.button:hover {
+  color: black;
 }
 
 .btn-sm {
@@ -71,13 +92,29 @@ h3 {                              /*  Small grey Labels */
   color: black;
 }
 
-/* -------  End lara's proposed additions ----------------------- */
+/* Guide cards */
 
-
-.App {
-  text-align: center;
+.guide-recommendation {
+  margin-bottom: 58px;
 }
 
+.guide-cards {
+  width: fit-content;
+  margin: 0 auto;
+}
 
+.guide-cards .card {
+  margin-bottom: 20px;
+}
 
+.guide-cards .card-img-top {
+  object-fit: cover;
+}
+
+.guide-cards .card-body {
+  position: relative;
+  margin-top: -58px;
+  background: #FFFBDC;
+  min-height: 170px;
+}
   

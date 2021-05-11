@@ -54,11 +54,11 @@ class App extends React.Component {
       <div className="App">
         <Navbar user={ user } handleLogin={ this.handleLogin } handleLogout={this.handleLogout}/>
         <Switch>
-          <Route exact path="/" render={ () => <Home />} />
+          <Route exact path="/" render={ () => <Home guides={ guides }/>} />
           {/* <Route exact path="/about" render={ () => <About />} /> */}
           <Route exact path="/explorers" render={ () => <Explorers guides={ guides }/>} />
           <Route exact path="/guides" render={ () => <GuidesContainer guides={ guides } />} />      
-          <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides }/>} />
+          <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides } user={ user }/>} />
           <Route exact path="/signup" render={ () => <Signup user={ user } handleSignup={ this.handleLogin }/>} />
           <Route exact path="/welcome" render={ () => <Welcome guides={ guides }/>}/>
 
