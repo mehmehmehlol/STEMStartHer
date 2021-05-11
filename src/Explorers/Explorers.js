@@ -13,7 +13,7 @@ const Explorers = ({ guides }) => {
       <div class="header">
       <h1 class="heading">How does it work for explorers?</h1>
       </div>
-      <img className="section-bubble" src={img0}/>
+      <img className="section-bubble" alt="Section Bubble" src={img0}/>
         
       <>
         <h4 class="heading">Check out our Guides!</h4>
@@ -32,9 +32,9 @@ const Explorers = ({ guides }) => {
         </Carousel>
       </>
       <>
-      <img className="companies" src={img1}/>
+      <img className="companies" alt="Companies" src={img1}/>
       </>
-      <img className="testimonial" src={img2}/>
+      <img className="testimonial" alt="Testimonial" src={img2}/>
       <>
       <div className="sign-up">
         <h5>Ready to become an Explorer?</h5>

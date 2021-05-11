@@ -25,10 +25,10 @@ const GuideDetails = ({ guides, user }) => {
                         <h4>{guide.geoLocation}</h4>
                         <div className="social-media-wrapper">
                           <Link to="{guide.linkedin}">
-                            <img className="social-media-icons" src="https://i.imgur.com/nlHjvXU.png" />
+                            <img className="social-media-icons" alt="LinkedIn" src="https://i.imgur.com/nlHjvXU.png" />
                           </Link> 
                           <Link to="{guide.linkedin}">
-                            <img className="social-media-icons" src="https://i.imgur.com/RFtVdpa.jpg" />
+                            <img className="social-media-icons" alt="Twitter" src="https://i.imgur.com/RFtVdpa.jpg" />
                           </Link>
                         </div>
                         <Row className="p-2">
