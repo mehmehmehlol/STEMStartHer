@@ -18,7 +18,7 @@ const Navbar = ({ user, handleLogin, handleLogout }) => {
         <div className="nav-right">
           <Link className="navlink" to="/welcome">My Connections</Link>
           <Link className="navlink" to="/guides">Find a Guide</Link>
-          <Link className="navlink" to="/home" onClick={() => {handleLogout()}}>Log Out</Link>
+          <Link className="navlink" to="/" onClick={() => {handleLogout()}}>Log Out</Link>
         </div>
         :
         <div className="nav-right">
