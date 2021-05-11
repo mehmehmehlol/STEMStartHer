@@ -45,6 +45,11 @@ h3 {                              /*  Small grey Labels */
   color: #626262;
 }
 
+a {
+  color: #000;
+  font-weight: 600; 
+}
+
 .button {
   display: inline-block;
   margin: 10px 10px;
@@ -86,28 +91,30 @@ h3 {                              /*  Small grey Labels */
   color: black;
 }
 
-/* .guide-cards {
-    padding-bottom: 10px;
- } */
+/* Guide cards */
 
- .guide-cards .card-img-top {
+.guide-recommendation {
+  margin-bottom: 58px;
+}
+
+.guide-cards {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.guide-cards .card {
+  margin-bottom: 20px;
+}
+
+.guide-cards .card-img-top {
   object-fit: cover;
 }
 
 .guide-cards .card-body {
   position: relative;
   margin-top: -58px;
-  margin-bottom: -50px;
-  /* padding: 100px; */
   background: #FFFBDC;
   min-height: 170px;
-  /* display: inline-block; */
 }
-
-.guide-recommendation {
-  margin-bottom: 58px;
-}
-
-
 
   
