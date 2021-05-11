@@ -1,12 +1,12 @@
 import React from 'react'
 // import { Dropdown } from 'semantic-ui-react'
 
-const Filter = () => {
+const SubjectFilter = ({ selectFilter }) => {
     return (
         <div>
-            <label>
-                Subjects of Expertise
-                <select>
+            <div>
+                <strong>Subjects of Expertise</strong>
+                <select onChange={e => selectFilter(e.target.value)}>
                     <options value="Science">Science</options>
                     <options value="Biology">Biology</options>
                     <options value="Chemistry">Chemistry</options>
@@ -25,10 +25,11 @@ const Filter = () => {
                     <options value="Statistics">Statistics</options>
                     <options value="Calculus">Calculus</options>
                 </select> 
-            </label>
-
+            </div>
+        
+            <div>
             <label>Fields of Expertise</label>
-                <select>
+                <select onChange={e => selectFilter(e.target.value)}>
                     <options value="Electrical Engineering">Electrical Engineering</options>
                     <options value="System Designs">System Designs</options>
                     <options value="Microprocessors">Microprocessors</options>
@@ -51,10 +52,11 @@ const Filter = () => {
                     <options value="Wildlife Biology">Wildlife Biology</options>
                     <options value="Environmental Science">Environmental Science</options>
                 </select> 
+            </div>
 
-            <label>
-                Location
-                <select>
+            <div>
+                <label>Location</label>
+                <select onChange={e => selectFilter(e.target.value)}>
                     <options value="Miami, FL">Miami, FL</options>
                     <options value="Boston, MA">Boston, MA</options>
                     <options value="Miami, FL">Boise, ID</options>
@@ -64,12 +66,12 @@ const Filter = () => {
                     <options value="New York, NY">New York, NY</options>
                     <options value="Cincinnati, OH">Cincinnati, OH</options>
                 </select> 
-            </label>
+            </div>
         </div>
     )
 }
 
-export default Filter
+export default SubjectFilter
 
 
 

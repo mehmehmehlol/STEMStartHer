@@ -2,43 +2,53 @@ import React from 'react'
 import RandomGuidesGenerator from '../../RandomGuidesGenerator';
 import './Home.css';
 import { Link } from 'react-router-dom'
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import { Container,Row,Col,Form,Card } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 const Home = ({ guides }) => {
   return (
     <div>
       
       {/* HERO section */}
-      <div className="jumbotron home-banner m-0 p-0">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col md-6">
-              <h1 className="display-4">Choosing a career is a big deal</h1>
-              <p className="lead">We help you make confident career decisions by faciliatiing direct conversations with working professionals in their field of interest.</p>
-              <p className="lead">
-                <button className="btn btn-primary btn-lg btn-blue"><Link to="/explorers">How it works &#8250;</Link></button>
+      <Jumbotron className="home-banner">
+        <Container fluid>
+          <Row>
+            <Col md={6} className="home-banner-left">
+              <h1>Choosing a career is<br /> a big deal</h1>
+              <p className="lead">We help you make confident career decisions by faciliatiing direct conversations with working professionals in their field of interest.<br /></p>
+              <p>
+                <Button variant="primary" className="btn-blue"><Link to="/explorers">How it works &#8250;</Link></Button>
               </p>
-            </div>
-            <div className="col md-6">
-              <img src="https://i.imgur.com/gaCEgAO.png" alt="girl reading a book" />
-            </div>
-          </div>
-        </div>
-      </div>
+            </Col>
+            <Col md={6} className="home-banner-right"><img src="https://i.imgur.com/gaCEgAO.png" alt="girl reading a book" /></Col>
+          </Row>
+        </Container>
+      </Jumbotron>
 
       {/* Search bar */}
-      <div className="container-fluid home-search bg-light p-4">
-            <div className='form-wrapper p-4 text-center'>
-              <h2 className="text-center p-4"><strong>Get guidance</strong> for career exploration from <strong>STEM field professionals</strong> around the world</h2>
-              <form className="p-4">
-                <div className='fullName'>
-                      <input type='text' name='fullName' value="Search by name, profession, industry or location..." />&nbsp;
-                      <label htmlFor="fullName"><button className="btn btn-primary btn-lg btn-green">Find your guide</button></label>
-                </div>
-                <div className='submit'>
-                  
-                </div>
-              </form>
-            </div>
+      <div className="home-search-wrapper p-4">
+        <Container fluid className="home-search">
+          <Row>
+            <Col><h2 className="p-4 text-center "><strong>Get guidance</strong> for career exploration from <strong>STEM field professionals</strong> around the world</h2></Col>
+          </Row>
+          <div>
+          <Form className="search-guide p-4">
+            <Row>
+              <Col md={10}>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Control type="input" placeholder="Search by name, profession, industry or location..." />
+                </Form.Group>
+              </Col>
+              <Col md={2} className="pl-0">
+                <Button variant="primary" className="search-btn btn-md btn-green" type="submit">
+                  Find a guide
+                </Button>
+              </Col>
+            </Row>
+          </Form>
+          </div>
+        </Container>
       </div>
 
       {/* import guides here */}
