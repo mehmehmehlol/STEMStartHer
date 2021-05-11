@@ -62,7 +62,7 @@
     border-radius: 10px 0 0 10px;
 }
 
-.guide-info {
+.recommended-guides .guide-info {
     width: 500px;
     padding: 30px;
     background: #dedede;
@@ -90,4 +90,74 @@
     text-align: center;
 }
 
+/* Guide Profile */
 
+.guide-profile-cover-bg {
+    height: 200px;
+    background: url('https://i.imgur.com/Mwof4Vw.jpg') repeat-x;
+    border-bottom: 8px solid #00796B;
+}
+
+.guide-detail .guide-info {
+    background: #fff!important;
+    padding: 4rem;
+}
+
+.guide-detail .details-right {
+    padding: 0 50px;
+}
+
+.guide-detail .details-left {
+    position: relative;
+    top: -8rem;
+}
+
+.details-left h4 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.field-of-expertise > h4 > h4:first-child, .years-of-experience > h4 > h4:first-child{
+    padding-top: 20px;
+}
+
+.field-of-expertise {
+    background: #DEDEDE;
+    border-radius: 10px 0 0 10px;
+    
+}
+
+.years-of-experience {
+    background: #DEDEDE;
+    border-radius: 0 10px 10px 0;
+}
+
+.field-of-expertise > h4, .years-of-experience > h4 {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.years-of-experience h4 {
+    text-align: center;
+}
+
+.guide-detail p {
+    font-size: 20px;
+}
+
+.full-card .guide-image {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.social-media-wrapper {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.social-media-icons {
+    width: 64px;
+    padding: 5px;
+}
