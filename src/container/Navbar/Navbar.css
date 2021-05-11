@@ -7,10 +7,10 @@ body {
     display: flex;
     justify-content: space-between;
     position: sticky;
-    height: 80px;
+    height: 110px;
     width: 100%;
-    margin: 0px;
-    padding: 0px 20px;
+    margin: px;
+    padding: 0 30px;
     background-color: white;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     font-size: 18px;
@@ -32,13 +32,13 @@ body {
 
 .logo-text {
     display: inline-block;
-    background-image: url(/src/images/logo-text.svg);
+    background-image: url(../../images/logo-text.svg);
     background-position: center;
     background-repeat: no-repeat;
     object-fit: fill;
     align-self: center;
     height: 50px;
-    width: 120px;
+    width: 170px;
     margin: 15px 10px;
 }
 
@@ -49,7 +49,7 @@ body {
     background-repeat: no-repeat;
     object-fit: fill;
     align-self: center;
-    height: 50px;
-    width: 50px;
+    height: 85px;
+    width: 60px;
     margin: 15px 10px;
 }

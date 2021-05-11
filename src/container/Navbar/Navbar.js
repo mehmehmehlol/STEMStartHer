@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import LogoText from '../../images/logo-text.svg'
 import './Navbar.css';
 
 
@@ -9,7 +10,9 @@ const Navbar = ({ user, handleLogin, handleLogout }) => {
       <div className="nav-left">
         <Link className='navlink logo' to='/'>
           <div className="logo-pic"></div>
-          <div className="logo-text"></div>
+          <div className="logo-text" style={{ width: 170 }}>
+            {/* <img src={LogoText} alt="STEMStartHer"/> */}
+          </div>
         </Link>
       
       </div>
@@ -23,7 +26,8 @@ const Navbar = ({ user, handleLogin, handleLogout }) => {
         :
         <div className="nav-right">
           <Link className="navlink" to="/about" style={{ textDecoration: "none" }}>About</Link>
-          <Link className="navlink" to="/explorers" style={{ textDecoration: "none" }}>For Explorers</Link>
+          <Link className="navlink" to="/for-explorers" style={{ textDecoration: "none" }}>For Explorers</Link>
+          <Link className="navlink" to="/for-guides" style={{ textDecoration: "none" }}>For Guides</Link>
           <Link className="button btn-med blue" to="/welcome" onClick={() => {handleLogin()}} style={{ textDecoration: "none" }}> 
               Log In
           </Link>
