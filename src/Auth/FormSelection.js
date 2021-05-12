@@ -22,7 +22,6 @@ class FormSelection extends React.Component {
         <div className="signup-content">
           <h1>Choose Your Path</h1>
   
-          {/* Added id="box" to signup explorer and guide */}
           <div className="grid-container">
           <div className="signup-explorer" onClick={() => {this.props.chooseExplorer()}}>
           <div className="signup-text">
@@ -40,7 +39,7 @@ class FormSelection extends React.Component {
           </div>
   
           <h5>Explorers can browse through our database of guides and choose who they would like to have a short call with</h5>
-          <button className="next-button" onClick={this.next}>Next</button>
+          <button className="next-button button blue" onClick={this.next}>Next</button>
         </div>
         </form>
         </div>

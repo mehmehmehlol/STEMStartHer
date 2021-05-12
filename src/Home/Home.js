@@ -1,5 +1,5 @@
 import React from 'react'
-import RandomGuidesGenerator from '../../RandomGuidesGenerator';
+import RandomGuidesGenerator from '../RandomGuidesGenerator';
 import './Home.css';
 import { Link } from 'react-router-dom'
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -51,10 +51,9 @@ const Home = ({ guides }) => {
         </Container>
       </div>
 
-      {/* import guides here */}
+      {/* Guides */}
       <div className="p-4 m-60 guides-recommendation">
         <h2 className="p-20">Talk with our Guides!</h2>
-        {/* please uncomment the code below if you are working on the style and comment after styling*/}
         <RandomGuidesGenerator guides={ guides }/>
       </div>
 

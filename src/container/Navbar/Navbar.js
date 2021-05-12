@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import LogoText from '../../images/logo-text.svg'
 import './Navbar.css';
 
 

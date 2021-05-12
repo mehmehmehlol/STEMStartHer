@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import "./Footer.css"
 import Facebook from '../../images/FacebookLogo.png'
 import Instagram from '../../images/InstagramLogo.png'
@@ -32,9 +31,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* <div className="footer-copyright">
-        <h4>Copyright 2021 ExplorHer</h4>
-      </div> */}
     </div>
   )
 }

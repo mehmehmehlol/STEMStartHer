@@ -1,7 +1,6 @@
 .footer {
     background-color: #B2DFDB;
     padding: 8px 25px;
-    /* font-family: sans-serif; delete after body font is set to Manrope */
 
 }
 
@@ -49,7 +48,6 @@
     display: inline-block;
     height: 40px;
     width: 40px;
-    /* background-color: gray; */
     margin: 15px;
 }
 

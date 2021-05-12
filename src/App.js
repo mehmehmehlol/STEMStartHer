@@ -4,7 +4,7 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 
 import Navbar from './container/Navbar/Navbar';
 import Footer from './container/Footer/Footer';
-import Home from './container/Home/Home';
+import Home from './Home/Home';
 
 import About from './About/About';
 import Signup from './Auth/Signup'
@@ -28,8 +28,6 @@ class App extends React.Component {
     fetch(guidesURL)
     .then(res => res.json())
     .then((guides) => {
-      // console.log(guides)
-      // debugger
       this.setState({ guides })
     })
   }
@@ -43,14 +41,8 @@ class App extends React.Component {
     this.setState({ user: false })
   }
 
-  // // filter
-  // selectFilter = (filtered) => {
-  //   this.setState({ filtered })
-  // }
-
   render() {
     const { guides, user } = this.state;
-    // debugger
     return (
       <div className="App">
         <Navbar user={ user } handleLogin={ this.handleLogin } handleLogout={this.handleLogout}/>

@@ -67,8 +67,8 @@ export default class FormPersonalDetails extends Component {
             </label>
             </div>
             <div className="button-container">
-            <button className="back-button" onClick={ this.back }>Previous</button>
-            <button className="next-button" onClick={ this.continue }>Next</button>
+            <button className="back-button button blue" onClick={ this.back }>Previous</button>
+            <button className="next-button button blue" onClick={ this.continue }>Next</button>
             </div>
           </form>
       </div>

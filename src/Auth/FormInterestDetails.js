@@ -18,10 +18,6 @@ export default class FormInterestDetails extends Component {
   state = {
     selectedOption: null
   }
-  // continue = e => {
-  //   e.preventDefault();
-  //   this.props.nextStep();
-  // }
 
   handleSelect = selectedOption => {
     this.setState({ selectedOption })
@@ -62,8 +58,8 @@ export default class FormInterestDetails extends Component {
 
           </div>
           <div className="button-container">
-          <button className="back-button" onClick={ this.back }>Previous</button>
-          <button className="form-signup-button" onClick={() => {handleSignup()}}><Link to="/welcome">Sign Up</Link></button>
+          <button className="back-button button blue" onClick={ this.back }>Previous</button>
+          <button className="form-signup-button button blue" onClick={() => {handleSignup()}}><Link to="/welcome">Sign Up</Link></button>
           </div>
           </div>
       </div>

@@ -6,9 +6,7 @@ class Filter extends React.Component {
     filtered: "all"
   }
 
-  // filter
   selectFilter = (filtered) => {
-    // console.log(filtered)
     this.setState({ filtered })
   }
 
