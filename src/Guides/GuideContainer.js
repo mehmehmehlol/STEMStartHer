@@ -16,7 +16,7 @@ const GuidesContainer = ({ guides }) => {
       
       <div className="search-guides">
         <div className="filter-wrapper">
-          <h2>Find the right Guide for you</h2>
+          <h2>Find the Right Guide for You</h2>
           <Filter /> <Button className="btn-green">Search</Button>
         </div> 
         <div className="display-guides">

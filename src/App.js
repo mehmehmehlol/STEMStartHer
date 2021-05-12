@@ -6,13 +6,14 @@ import Navbar from './container/Navbar/Navbar';
 import Footer from './container/Footer/Footer';
 import Home from './container/Home/Home';
 
-// import About from './About/About';
+import About from './About/About';
 import Signup from './Auth/Signup'
 import Explorers from './Explorers/Explorers';
 
 import GuidesContainer from './Guides/GuideContainer';
 import GuideDetails from './Guides/GuideDetails';
 import Welcome from './Landing/Welcome'
+import GuideInfo from './For-Guide/GuideInfo';
 
 const guidesURL = 'https://explorher-backend.herokuapp.com/guides'
 
@@ -55,8 +56,9 @@ class App extends React.Component {
         <Navbar user={ user } handleLogin={ this.handleLogin } handleLogout={this.handleLogout}/>
         <Switch>
           <Route exact path="/" render={ () => <Home guides={ guides }/>} />
-          {/* <Route exact path="/about" render={ () => <About />} /> */}
-          <Route exact path="/explorers" render={ () => <Explorers guides={ guides }/>} />
+          <Route exact path="/about" render={ () => <About />} />
+          <Route exact path="/for-explorers" render={ () => <Explorers guides={ guides }/>} />
+          <Route exact path="/for-guides" render={ () => <GuideInfo />} />
           <Route exact path="/guides" render={ () => <GuidesContainer guides={ guides } />} />      
           <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides } user={ user }/>} />
           <Route exact path="/signup" render={ () => <Signup user={ user } handleSignup={ this.handleLogin }/>} />

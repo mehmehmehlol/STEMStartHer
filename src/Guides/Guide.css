@@ -1,6 +1,6 @@
 
 .recommended-guides > .wrapper {
-    height: 180px;
+    height: 160px;
     padding: 4rem;
     background: #00796B;
 }
@@ -32,21 +32,23 @@
 
 .display-guides > div > div > div {
     border-radius: 10px;
-    min-height: 345px;
+    min-height: 295px;
     margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
 }
 
 .display-guides div {
     display: inline-block;
     text-align: left;
     vertical-align: top;
-    min-height: 345px;
+    min-height: 295px;
     
 }
 
-.display-guides-wrapper {
+/* .display-guides-wrapper {
     width: 62%;;
-}
+} */
 
 .display-guides-wrapper h1 {
     display: none;
@@ -58,26 +60,32 @@
 
 .guide-profile-pic .guide-image {
     object-fit: cover;
-    height: 345px;
+    height: 295px;
     border-radius: 10px 0 0 10px;
 }
 
-.recommended-guides .guide-info {
+.search-guides .guide-info {
     width: 500px;
-    padding: 30px;
-    background: #dedede;
+    padding: 2rem;
+    background: #fff;
 }
+
+
 
 .guide-years-fields-experience {
     display: inline-flex!important;
-    width: 362px;
+    width: 365px;
     padding: 30px;
     background: #b2dfdb;
     border-radius: 0 10px 10px 0;
 }
 
+.guide-years-fields-experience > h4 > h4:first-child {
+    padding-top: 20px;
+}
+
 .guide-years-fields-experience h4 {
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 20px;
 }
 
@@ -96,6 +104,11 @@
     height: 200px;
     background: url('https://i.imgur.com/Mwof4Vw.jpg') repeat-x;
     border-bottom: 8px solid #00796B;
+}
+
+.guide-info h4 {
+    font-size: 20px;
+    line-height: 15px;
 }
 
 .guide-detail .guide-info {

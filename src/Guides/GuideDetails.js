@@ -45,9 +45,10 @@ const GuideDetails = ({ guides, user }) => {
                         <h2>{guide.first_name} {guide.last_name}</h2>
                         <h4>{guide.job_title}</h4>
                         <h4 className="pb-4">{guide.company}</h4>
+                        <p>{guide.bio}</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum erat augue, ullamcorper tempus nisl dapibus eget. Fusce eget augue non tellus finibus bibendum. Fusce finibus nibh egestas augue facilisis, eu tempor erat volutpat. Aenean viverra mauris eu faucibus vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus in nisl vitae risus pellentesque semper.</p>
                         <p>Suspendisse a nibh eu quam porttitor porta id eu odio. Donec ut dui cursus, molestie arcu sit amet, vestibulum lacus. Nam quis urna euismod, imperdiet nisi at, vulputate quam. Nam quis semper justo. Ut purus mi, pulvinar tincidunt aliquam a, suscipit nec sapien.</p>
-                        <p>Suspendisse a nibh eu quam porttitor porta id eu odio. Donec ut dui cursus, molestie arcu sit amet, vestibulum lacus. Nam quis urna euismod, imperdiet nisi at, vulputate quam. Nam quis semper justo. Ut purus mi, pulvinar tincidunt aliquam a, suscipit nec sapien.</p>
+                        <p>Suspendisse a nibh eu quam porttitor porta id eu odio. Donec ut dui cursus, molestie arcu sit amet, vestibulum lacus. Nam quis urna euismod, imperdiet nisi at, vulputate quam.</p>
                       </Col>
                     </Row>
                   </Container>
