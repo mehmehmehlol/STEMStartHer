@@ -8,9 +8,9 @@ The gender gap in today's STEM workforce is still large, and we want to help bri
 
 Our solution: A platform *for women by women*, an online space for any woman curious about a STEM career to find and speak with women who have real world experience in STEM careers, across the STEM spectrum.
 
-Explorer's can sign up and get suggested matches for Guides in the fields they are interested in, then book an Adventure (video call) with the Guide. The video call is integrated into the platform, so Explorers and Guides can meet with ease from any location they choose.
+Explorers can sign up and get suggested matches for Guides in the fields they are interested in, then book an Adventure (video call) with the Guide. The video call is integrated into the platform, so Explorers and Guides can meet with ease from any location they choose.
 
-Guide's can give back to the next generation of STEM women with the benefits of flexible meeting times and short time commitments.
+Guides can give back to the next generation of STEM women with the benefits of flexible meeting times and short time commitments.
 
 ## Technology Used
 
