@@ -70,4 +70,22 @@
   {
     "category": "Technology",
     "subject": "UI/UX"
-  } ]
+  },
+  {
+    "category": "Technology",
+    "subject": "Technology"
+  },
+  {
+      "category": "Technology",
+      "subject": "Algorithms"
+  },
+  {
+    "category": "Technology",
+    "subject": "Finance"
+  },
+  {
+    "category": "Engineering",
+    "subject": "Engineering"
+  } 
+  
+]
