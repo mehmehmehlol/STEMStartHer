@@ -16,9 +16,9 @@ const Home = ({ guides }) => {
           <Row>
             <Col md={6} className="home-banner-left">
               <h1>Choosing a career is<br /> a big deal</h1>
-              <p className="lead">We help you make confident career decisions by faciliatiing direct conversations with working professionals in their field of interest.<br /></p>
+              <p className="lead">We help you make confident career decisions by facilitating direct conversations with working professionals in their field of interest.<br /></p>
               <p>
-                <Button variant="primary" className="btn-blue"><Link to="/explorers">How it works &#8250;</Link></Button>
+                <Button variant="primary" className="button blue"><Link to="/about" style={{ textDecoration: 'none', color: "black", }}>Check Out Our Mission! &#8250;</Link></Button>
               </p>
             </Col>
             <Col md={6} className="home-banner-right"><img src="https://i.imgur.com/gaCEgAO.png" alt="girl reading a book" /></Col>

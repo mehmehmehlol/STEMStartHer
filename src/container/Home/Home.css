@@ -1,7 +1,12 @@
+/* * {
+    border: solid red 1px;
+} */
+
 /** HOME CSS **/
 h2 {
     padding: 20px 0;
 }
+
 .bg-blue {
     background-color: #B2DFDB;
 }
@@ -16,6 +21,10 @@ h2 {
     color: #fff;
     background-color: #00796B;
     border-color: #00796B;
+}
+
+.button.blue:hover {
+    background-color: #FFFBDC;
 }
 
 
@@ -40,12 +49,17 @@ h2 {
 
 /* Search guide */
 
+.search-guide {
+    /* margin-left: -300px; */
+    width: 100%;
+}
+
 .home-search-wrapper {
     background: #DEDEDE;
 }
 
 .home-search {
-    width: 70%;
+    /* width: 80%; */
     margin: 0 auto;
 }
 

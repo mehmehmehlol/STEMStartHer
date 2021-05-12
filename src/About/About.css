@@ -1,13 +1,17 @@
+/* * {
+  border: red solid 1px;
+} */
 
 .about-container {
   margin: 0 auto; 
 }
 
 .about-container > .wrapper {
-  height: 180px;
-  padding: 4rem;
+  /* height: 180px; */
+  padding: 3rem;
   background: #b2dfdb;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 8px rgba(94, 22, 22, 0.10);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .about-container h1 {
@@ -20,6 +24,125 @@
   text-align: left;
   margin-top: 40px;
   margin-left: 20px;
+  margin-bottom: 50px;
   padding: 10px 70px;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+/* Mission */
+.mission-left {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.mission-left h1 {
+  font-weight: 800;
+  margin-left: 76px;
+  font-size: 40px;
+}
+
+.about-mission {
+  margin-right: 10px;
+  margin-bottom: 70px;
+}
+
+
+.mission-left p,
+.vision-left p {
+  /* margin-top: 20px; */
+  margin-left: 90px;
+  padding: 30px;
+  font-size: 25px;
+  
+}
+
+.mission-right {
+  padding-right: 0px;
+  width: 350px;
+  display: block;
+}
+
+.mission-right img {
+  height: 400px;
+  margin-right: 0 auto;
+}
+
+/* values */
+.about-values h1,
+.about-vision h1 {
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.values-container {
+  margin: 55px;
+}
+
+.values-container img {
+  margin-bottom: 55px;
+  height: 250px;
+}
+
+.values-container h5 {
+  font-size: 30px;
+}
+
+.vision-container {
+  margin-right: 10px;
+}
+
+.vision-left p {
+  font-size: 25px;
+  margin: 20px;
+  margin-left: 70px;
+  padding: 20px;
+  text-align: left;
+}
+
+.vision-right img {
+  height: 300px;
+  margin-right: 0 auto;
+}
+
+/* Sign-Up Btn */
+.sign-up-btn {
+  padding: 15px 90px;
+  margin: 40px; 
+  background: #00796B;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #FFFFFF;    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50px;
+}
+.sign-up-btn a {
+  text-decoration: none;
+}
+.sign-up-btn a:link {
+  color: #FFFFFF;
+}
+/* visited link */
+.sign-up-btn a:visited {
+  color: #FFFFFF;
+}
+/* mouse over link */
+.sign-up-btn:hover {
+  color: #FFFFFF;
+}
+/* selected link */
+.sign-up-btn a:active {
+  color:#FFFFFF;
+}
+/* Sign Up Section */
+.sign-up h5{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 24px;
+  text-align: center;
+  margin: 50px 50px 50px 50px;
 }
