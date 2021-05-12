@@ -5,7 +5,7 @@ const SubjectFilter = ({ selectFilter }) => {
     return (
         <div>
             <div>
-                <strong>Subjects of Expertise</strong>
+                Subjects of Expertise
                 <select onChange={e => selectFilter(e.target.value)}>
                     <options value="Science">Science</options>
                     <options value="Biology">Biology</options>

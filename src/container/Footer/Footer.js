@@ -1,10 +1,11 @@
 import React from 'react'
-// import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import { Link } from 'react-router-dom/'
 import "./Footer.css"
 import Facebook from '../../images/FacebookLogo.png'
 import Instagram from '../../images/InstagramLogo.png'
 import Twitter from '../../images/TwitterLogo.png'
 import Linkedin from '../../images/LinkedinLogo.png'
+
 
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
           </div>
           <div className="footer-bar"></div>
           <div className="footer-links">
-            <div className="footer-navlink">About</div>
+            <div className="footer-navlink"><Link to="/home">About</Link></div>
             <div className="footer-navlink">FAQs</div>
             <div className="footer-navlink">Standards</div>
             <div className="footer-navlink">Partnership</div>

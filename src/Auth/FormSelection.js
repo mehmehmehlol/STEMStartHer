@@ -24,15 +24,15 @@ class FormSelection extends React.Component {
   
           {/* Added id="box" to signup explorer and guide */}
           <div className="grid-container">
-          <div className="signup-explorer" onClick={() => {this.props.chooseExplorer()}}>
-          <div className="signup-text">
+          <div className="signup-explorer" onClick={() => {this.props.chooseExplorer()}} style={{ cursor: "pointer"}}>
+          <div className="signup-text" style={{ cursor: "pointer"}}>
             <h1>Sign up as an Explorer</h1>
             <p>Get guidance from professionals in the field and get your career questions answered.</p>
             </div>
           </div>
   
           <div className="signup-guide">
-            <div className="signup-text">
+            <div className="signup-text" style={{ cursor: "pointer"}}>
             <h1>Sign up as a Guide</h1>
             <p>Provide guidance for the next generation by lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>

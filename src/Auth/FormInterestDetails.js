@@ -63,7 +63,7 @@ export default class FormInterestDetails extends Component {
           </div>
           <div className="button-container">
           <button className="back-button" onClick={ this.back }>Previous</button>
-          <button className="form-signup-button" onClick={() => {handleSignup()}}><Link to="/welcome">Sign Up</Link></button>
+          <button className="form-signup-button" onClick={() => {handleSignup()}}><Link to="/my-home">Sign Up</Link></button>
           </div>
           </div>
       </div>

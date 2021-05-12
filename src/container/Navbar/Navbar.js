@@ -21,7 +21,7 @@ const Navbar = ({ user, handleLogin, handleLogout }) => {
       {
         user ?
         <div className="nav-right">
-          <Link className="navlink" to="/welcome" style={{ textDecoration: "none" }}>My Connections</Link>
+          <Link className="navlink" to="/my-home" style={{ textDecoration: "none" }}>My Connections</Link>
           <Link className="navlink" to="/guides" style={{ textDecoration: "none" }}>Find a Guide</Link>
           <Link className="button btn-med blue" to="/" onClick={() => {handleLogout()}} style={{ textDecoration: "none" }}>Log Out</Link>
         </div>
@@ -30,7 +30,7 @@ const Navbar = ({ user, handleLogin, handleLogout }) => {
           <Link className="navlink" to="/about" style={{ textDecoration: "none" }}>About</Link>
           <Link className="navlink" to="/for-explorers" style={{ textDecoration: "none" }}>For Explorers</Link>
           <Link className="navlink" to="/for-guides" style={{ textDecoration: "none" }}>For Guides</Link>
-          <Link className="button btn-med blue" to="/welcome" onClick={() => {handleLogin()}} style={{ textDecoration: "none" }}> 
+          <Link className="button btn-med blue" to="/my-home" onClick={() => {handleLogin()}} style={{ textDecoration: "none" }}> 
               Log In
           </Link>
           <Link className="button btn-med " to="/signup" style={{ textDecoration: "none" }}>Sign Up</Link>

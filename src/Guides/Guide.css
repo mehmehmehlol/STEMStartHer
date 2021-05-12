@@ -1,4 +1,5 @@
 
+
 .recommended-guides > .wrapper {
     /* height: 160px; */
     padding: 3rem;
@@ -67,7 +68,7 @@
 .search-guides .guide-info {
     width: 500px;
     padding: 2rem;
-    background: #fff;
+    background: #f2f2f2;
 }
 
 

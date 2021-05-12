@@ -82,7 +82,7 @@ const About = () => {
 
         <div className="sign-up">
           <h5>Interested in joining us?</h5>
-          <button className="sign-up-btn"><Link to="/signup">Sign Up</Link></button>
+          <button className="sign-up-btn button blue"><Link to="/signup" style={{ color: "black" }}>Sign Up</Link></button>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Welcome = ({ guides }) => {
     <div className="welcome">
       <div className="appointment-reminder">
         <h1>Your Journey Begins Here!</h1>
-        <h5>Welcome, new explorer!</h5>
+        <p>Welcome, new explorer!</p>
         <p>This is the start of your career. To begin, check out our Guides at San Francisco, </p>
         <p>When you schedule a meeting, a notification will appear here.</p>
         <Link to="/guides" style={{ textDecoration: "none" }}><button className="button btn-lg appointment-button">Let's Proceed!</button></Link>
