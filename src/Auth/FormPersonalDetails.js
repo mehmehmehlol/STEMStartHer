@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// Added new files -Alyssa
 import progressbar3 from '../images/progress-bar-step-3.svg'
 import './Form.css'
 

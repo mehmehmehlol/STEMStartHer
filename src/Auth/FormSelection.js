@@ -1,5 +1,4 @@
 import React from 'react'
-// Added new files -Alyssa
 import './Form.css'
 import progressbar1 from '../images/progress-bar-step-1.svg'
 import { green } from '@material-ui/core/colors';

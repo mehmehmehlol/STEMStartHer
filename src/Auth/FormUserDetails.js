@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// Added new files -Alyssa
 import './Form.css'
 import progressbar2 from '../images/progress-bar-step-2.svg'
 import quicklinks from '../images/quick-sign-up.svg'

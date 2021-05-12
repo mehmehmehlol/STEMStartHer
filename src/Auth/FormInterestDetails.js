@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Select from 'react-select'
 import interestList from '../interest_data.json'
 import { Link } from 'react-router-dom'
-// Added new files -Alyssa
 import progressbar4 from '../images/progress-bar-step-4.svg'
 import './Form.css'
 
