@@ -10,13 +10,13 @@ import img2 from '../images/Testimonial.svg'
 const Explorers = ({ guides }) => {
   return (
     <div>
-      <div class="header">
-      <h1 class="heading">How does it work for explorers?</h1>
+      <div className="explorer-container">
+      <h1 className="heading">How does it work for explorers?</h1>
       </div>
       <img className="section-bubble" alt="Section Bubble" src={img0}/>
         
       <>
-        <h4 class="heading">Check out our Guides!</h4>
+        <h4 className="heading">Check out our Guides!</h4>
         <Carousel itemsToShow={4} itemsToScroll={2}>
           { guides.map(guide => (
             <Item key={ guide.id }>

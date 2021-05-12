@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-// Added new file -Alyssa
+// Added new files -Alyssa
 import progressbar3 from '../images/progress-bar-step-3.svg'
+import './Form.css'
 
 export default class FormPersonalDetails extends Component {
   continue = e => {
@@ -16,34 +17,35 @@ export default class FormPersonalDetails extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <div>
+      <div className="form-personal-details">
+        <form className="input-user-form">
           <div className="signup-header">
-            <h1>Almost there!</h1>
+            <h1 className="heading">Almost there!</h1>
           </div>
 
           <div>
           <img className="progressbar3" alt="Step 3" src={progressbar3}/>
           </div>
 
-          <h5>Create a public profile, this is what guides see.</h5>
+          <h5 >Create a public profile, this is what guides see.</h5>
 
-          <form>
+          <div className="input-details">
             <label>
-              First Name:
+              <p>First Name:</p>
               <input type="text" placeholder="First Name" value={values.first_name} onChange={handleChange('first_name')}/>
             </label>
             <br />
             <label>
-              Last Name:
+              <p>Last Name:</p>
               <input type="text" placeholder="Last Name" value={values.last_name} onChange={handleChange('last_name')}/>
             </label>
             <br />
             <label>
-              Location:
+              <p>Location:</p>
               <input type="text" placeholder="Location" value={values.location} onChange={handleChange('location')}/>
             </label>
             <label>
-              Highest Level of Education:
+              <p>Highest Level of Education:</p>
               <select value={values.level_of_education} onChange={handleChange('level_of_education')}>
                 <option value="High-School">High School</option>
                 <option value="Associates-Degree">Associate's Degree</option>
@@ -62,11 +64,13 @@ export default class FormPersonalDetails extends Component {
                   <li>Anything special your Guides should know?</li>
                 </ul>
               </p>
-              <input type="textarea" placeholder="Tell us about yourself!" value={values.bio} onChange={handleChange('bio')}/>
+              <input className="bio" type="textarea" placeholder="Tell us about yourself!" value={values.bio} onChange={handleChange('bio')}/>
             </label>
-
+            </div>
+            <div className="button-container">
             <button className="back-button" onClick={ this.back }>Previous</button>
             <button className="next-button" onClick={ this.continue }>Next</button>
+            </div>
           </form>
       </div>
     )

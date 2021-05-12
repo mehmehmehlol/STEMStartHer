@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 // Added new files -Alyssa
-import '../styles/FormUserDetails.css'
+import './Form.css'
 import progressbar2 from '../images/progress-bar-step-2.svg'
+import quicklinks from '../images/quick-sign-up.svg'
+import line from '../images/line.svg'
 
 
 export default class FormUserDetails extends Component {
@@ -18,7 +20,10 @@ export default class FormUserDetails extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <div>
+      <div className="form-user-details">
+
+          <form className="input-user-form">
+
           <div className="signup-header">
             <h1 className="heading">Next Step!</h1>
           </div>
@@ -29,25 +34,34 @@ export default class FormUserDetails extends Component {
 
           <h5>Let's continue with the basics!</h5>
 
-          <form>
+          <div className="grid-container">
+          <img className="quicklinks" alt="quick-sign-up" src={quicklinks}/> 
+          <img className="line" alt="line" src={line}/> 
+
+          <div className="input-details">
             <label>
-              Email:
+              <p>Email:</p>
               <input type="text" placeholder="email" value={values.email} onChange={handleChange('email')}/>
             </label>
             <br />
             <label>
-              Password:
+              <p>Password:</p>
               <input type="password" placeholder="password" value={values.password} onChange={handleChange('password')}/>
             </label>
             <br />
             <label>
-              Confirm Password:
+            <p>Confirm Password:</p>
               <input type="password" placeholder="confirm password" value={values.confirm_password} onChange={handleChange('confirm_password')}/>
             </label>
             <p>By signing up for ExplorHER, you agree to our Terms of Service and Privacy Policy.</p>
 
+            </div>
+            </div>
+            
+            <div className="button-container">
             <button className="back-button" onClick={ this.back }>Previous</button>
             <button className="next-button" onClick={ this.continue }>Next</button>
+            </div>
           </form>
       </div>
     )
