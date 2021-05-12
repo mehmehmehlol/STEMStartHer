@@ -5,6 +5,7 @@ const GuideCard = ({ guides }) => {
   return (
     <>
       { guides.map(guide => (
+        // console.log(guide)
         <div key={ guide.id }>
           <div className="guide-profile-pic">
             <img className="guide-image" src={guide.profile_pic} alt={guide.first_name} />
@@ -13,9 +14,8 @@ const GuideCard = ({ guides }) => {
           <div className="guide-info">
             <h4><Link to={`/guides/${guide.first_name}`}>{guide.first_name} {guide.last_name}</Link>,</h4>
             <h4>{guide.job_title}</h4>
-            <h4>At {guide.company} in { guide.geoLocation }</h4>
+            <h4>At {guide.company} in { guide.geolocation }</h4>
             <br />
-            { guide.bio }
           </div>
 
           <div className="guide-years-fields-experience">

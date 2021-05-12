@@ -33,45 +33,57 @@ const About = () => {
           <p>The team here at <strong>STEMStartHer</strong> have created this platform to streamline the connection making process, so explorers can focus on having those vital information gathering conversations on the way to a STEM career, and Guides can contribute in a meaningful way without a long term time commitment.</p>
         </div>
       </div>
-      <div className="about-mission">
-        <div className="mission-left">
-          <img src={Mission} alt="Mission" />
-        </div>
-        <div className="mission-right">
+      <div className="about-mission row">
+        <div className="mission-left col-md-5">
           <h1>Our Mission Statement</h1>
           <p>Demystifying STEM career paths by connecting STEM curious women with experienced STEM professionals.</p>
         </div>
+        <div className="mission-right col-md-7">
+          <img src={Mission} alt="Mission" />
+        </div>
+      
       </div>
+      {/* </div> */}
 
       <div className="about-values">
         <h1>Our Values</h1>
-        <div>
-          <img src={Inclusivity} alt="Inclusivity"/>
-          <h5>Inclusivity</h5>
-          <img src={Diversity} alt="Diversity"/>
-          <h5>Diversity</h5>
-          <img src={Equity} alt="Equity"/>
-          <h5>Equity</h5>
-          <img src={Innovation} alt="Innovation"/>
-          <h5>Innovation</h5>
+        <div className="values-container row">
+          <div className="col-md-3">
+            <img src={Inclusivity} alt="Inclusivity"/>
+            <h5>Inclusivity</h5>
+          </div>
+          <div className="col-md-3">
+            <img src={Diversity} alt="Diversity"/>
+            <h5>Diversity</h5>
+          </div>
+          <div className="col-md-3">
+            <img src={Equity} alt="Equity"/>
+            <h5>Equity</h5>
+          </div>
+          <div className="col-md-3">
+            <img src={Innovation} alt="Innovation"/>
+            <h5>Innovation</h5>
+          </div>
         </div>
       </div>
 
       <div className="about-vision">
         <h1>The Vision</h1>
-        <div className="paragraph vision-left">
-          <p>We exist to create opportunities for the next generation of women in STEM connecting them with leaders in the industry for career support. We are working towards a world where all girls feel free to explore and be inspired by science, technology, engineering and math (STEM) areas.</p>
-        </div>
-        <div>
-          <div className="vision-right">
-            <img src={Vision} alt="Vision" />
+        <div className="vision-container row">
+          <div className="paragraph vision-left col-md-7">
+            <p>We exist to create opportunities for the next generation of women in STEM connecting them with leaders in the industry for career support. We are working towards a world where all girls feel free to explore and be inspired by science, technology, engineering and math (STEM) areas.</p>
+          </div>
+          <div>
+            <div className="vision-right col-md-5">
+              <img src={Vision} alt="Vision" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="sign-up">
-        Interested in joining us?
-        <button className="sign-up-btn"><Link to="/signup">Sign Up</Link></button>
+        <div className="sign-up">
+          <h5>Interested in joining us?</h5>
+          <button className="sign-up-btn button blue"><Link to="/signup" style={{ color: "black" }}>Sign Up</Link></button>
+        </div>
       </div>
     </div>
   )

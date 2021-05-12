@@ -38,7 +38,7 @@ const Explorers = ({ guides }) => {
       <>
       <div className="sign-up">
         <h5>Ready to become an Explorer?</h5>
-        <button className="sign-up-btn"><Link to="/signup">Sign Up</Link></button>
+        <button className="sign-up-btn button blue"><Link to="/signup" style={{ color: "black" }}>Sign Up</Link></button>
         </div>
       </>
     </div>

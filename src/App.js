@@ -54,7 +54,7 @@ class App extends React.Component {
           <Route exact path="/guides" render={ () => <GuidesContainer guides={ guides } />} />      
           <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides } user={ user }/>} />
           <Route exact path="/signup" render={ () => <Signup user={ user } handleSignup={ this.handleLogin }/>} />
-          <Route exact path="/welcome" render={ () => <Welcome guides={ guides }/>}/>
+          <Route exact path="/my-home" render={ () => <Welcome guides={ guides }/>}/>
 
         </Switch>
         <Footer />

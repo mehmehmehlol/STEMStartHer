@@ -5,11 +5,15 @@
 .appointment-reminder {
   border: 1px solid black;
   border-radius: 10%;
-  width: 350px;
+  width: 450px;
   margin: 0 auto;
   padding: 15px;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.appointment-reminder p {
+  font-size: 25px;
 }
 
 .button.appointment-button {
