@@ -34,6 +34,9 @@ npm install
 ```
 3. Run `npm start` to start "localhost:3000"
 
+## Demo
+<a href="https://www.youtube.com/watch?v=eYM6ZjpZGeY">Demo Video</a>
+
 ## Screenshots
 
 ### Home
