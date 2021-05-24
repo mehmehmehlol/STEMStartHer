@@ -36,6 +36,7 @@ npm install
 
 ## Demo
 <a href="https://www.youtube.com/watch?v=eYM6ZjpZGeY">Demo Video</a>
+<br />
 This 3-min demo video would show the entire prototype, including the wireframes that we didn't have the chance to develop throughout the hackathon.
 
 If you prefer to see the rest of the undeveloped pages by yourself, our design team created this <a href="https://prototypehype.invisionapp.com/console/share/3V2JRZUUXZ">interactive clickable prototype</a> (follow the blue areas)
