@@ -46,18 +46,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar user={ user } handleLogin={ this.handleLogin } handleLogout={this.handleLogout}/>
-        <Switch>
-          <Route exact path="/" render={ () => <Home guides={ guides }/>} />
-          <Route exact path="/about" render={ () => <About />} />
-          <Route exact path="/for-explorers" render={ () => <Explorers guides={ guides }/>} />
-          <Route exact path="/for-guides" render={ () => <GuideInfo />} />
-          <Route exact path="/guides" render={ () => <GuidesContainer guides={ guides } />} />      
-          <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides } user={ user }/>} />
-          <Route exact path="/signup" render={ () => <Signup user={ user } handleSignup={ this.handleLogin }/>} />
-          <Route exact path="/my-home" render={ () => <Welcome guides={ guides }/>}/>
+        <div class="main">
+          <Switch>
+            <Route exact path="/" render={ () => <Home guides={ guides }/>} />
+            <Route exact path="/about" render={ () => <About />} />
+            <Route exact path="/for-explorers" render={ () => <Explorers guides={ guides }/>} />
+            <Route exact path="/for-guides" render={ () => <GuideInfo />} />
+            <Route exact path="/guides" render={ () => <GuidesContainer guides={ guides } />} />      
+            <Route path="/guides/:first_name" render={ () => <GuideDetails guides={ guides } user={ user }/>} />
+            <Route exact path="/signup" render={ () => <Signup user={ user } handleSignup={ this.handleLogin }/>} />
+            <Route exact path="/my-home" render={ () => <Welcome guides={ guides }/>}/>
 
-        </Switch>
-        <Footer />
+          </Switch>
+          <Footer />
+        </div>
       </div>  
     ) 
   }

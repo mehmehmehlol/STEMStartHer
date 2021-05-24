@@ -52,7 +52,7 @@ export default class FormUserDetails extends Component {
             <p>Confirm Password:</p>
               <input type="password" placeholder="confirm password" value={values.confirm_password} onChange={handleChange('confirm_password')}/>
             </label>
-            <p>By signing up for ExplorHER, you agree to our Terms of Service and Privacy Policy.</p>
+            <p>By signing up for STEMStartHer, you agree to our Terms of Service and Privacy Policy.</p>
 
             </div>
             </div>

@@ -15,6 +15,10 @@ body {
   margin: none;
 }
 
+.main {
+  margin-top: 100px;
+}
+
 h1 {
   font-size: 34px;
   font-weight: 800;
