@@ -27,7 +27,7 @@
   color: #00796B;
   font-weight: 800;
   display: inline-block;
-  font-size: 60px;
+  font-size: 40px;
   padding: 70px;
   padding-bottom: 40px;
 }
@@ -36,7 +36,7 @@
   color: #00796B;
   font-weight: 800;
   display: inline-block;
-  font-size: 60px;
+  font-size: 40px;
   padding: 70px;
   padding-bottom: 40px;
 }
@@ -65,26 +65,26 @@
 
 .step-content-left h1 {
   padding-top: 60px;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .step-content h1 {
   padding-top: 60px;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .step-content-left p {
-  font-size: 30px;
-  margin-left: 167px;
+  font-size: 25px;
+  margin-left: 155px;
 }
 
 .step-content p {
-  font-size: 30px;
-  margin-left: 178px;
+  font-size: 25px;
+  margin-left: 165px;
 }
 
 img.bubble-left {
-  height: 500px;
+  height: 400px;
   margin-left: 140px;
 }
 
@@ -96,7 +96,7 @@ img.line-step1-2 {
 }
 
 img.bubble-right {
-  height: 500px;
+  height: 400px;
   /* margin-left: 140px; */
 }
 
@@ -107,9 +107,10 @@ img.line-step2-3 {
   z-index: -1;
 }
 
-
+/* guide testimonial */
 .guide-testimonial h1 {
-  font-size: 60px;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 .guide-testimonial-content {
@@ -117,13 +118,14 @@ img.line-step2-3 {
 }
 
 .guide-testimonial-content img {
-  height: 200px;
+  height: 130px;
   margin-right: 0;
+  margin-bottom: 20px;
 }
 
-.guide-testimonial-content p{
+.guide-testimonial-content p {
   text-align: left;
-  font-size: 30px;
+  font-size: 23px;
   /* width: 700px; */
   padding: 30px;
   padding-right: 80px;
